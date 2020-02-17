@@ -32,6 +32,20 @@ export let fade = trigger('fade', [
       transition('void => *, * => void',[
         animate(2000)
       ])
+
+
+
+
+
+
+
+     animations:[
+       trigger('fade',[
+         transition(':enter',
+          style()
+         )
+       ])
+     ]
        */
 
     ])
