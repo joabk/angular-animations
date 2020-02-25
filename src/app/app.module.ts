@@ -7,6 +7,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MyZippyComponent } from './my-zippy/my-zippy.component';
 
+//import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +19,7 @@ import { MyZippyComponent } from './my-zippy/my-zippy.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule
+    //, MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
