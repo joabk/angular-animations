@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NgRedux } from 'ng2-redux';
+import { IAppState, rootReducer } from './store';
+import { INCREAMENT } from './actions';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private ngRedux: NgRedux<IAppState>){
+    // ngRedux.subscribe(()=>{
+    //   console.log(ngRedux.getState());
+    // })
+  }
+
   title = 'app';
+  counter = 0;
+  increament(){
+    this.ngRedux.dispatch({type: INCREAMENT});
+    //this.counter++;
+  }
 }
