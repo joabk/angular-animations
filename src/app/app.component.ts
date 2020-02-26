@@ -16,6 +16,7 @@ export class AppComponent {
   title = 'app';
   @select('counter') counter;
   @select(['messaging','newMessages']) messaging;
+  //@select((s: IAppState)=>s.messaging.newMessages) messageCount;
 
   increament(){
     this.ngRedux.dispatch({type: INCREAMENT});
