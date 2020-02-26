@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgRedux } from 'ng2-redux';
+import { NgRedux, select } from 'ng2-redux';
 import { IAppState, rootReducer } from './store';
 import { INCREAMENT } from './actions';
 
@@ -10,13 +10,13 @@ import { INCREAMENT } from './actions';
 })
 export class AppComponent {
   constructor(private ngRedux: NgRedux<IAppState>){
-    // ngRedux.subscribe(()=>{
-    //   console.log(ngRedux.getState());
-    // })
+   
   }
 
   title = 'app';
-  counter = 0;
+  @select('counter') counter;
+  @select(['messaging','newMessages']) messaging;
+
   increament(){
     this.ngRedux.dispatch({type: INCREAMENT});
     //this.counter++;

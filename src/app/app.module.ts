@@ -31,6 +31,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 })
 export class AppModule {
   constructor(ngRedux: NgRedux<IAppState>){
-    ngRedux.configureStore(rootReducer, INITIAL_STATE )
+    ngRedux.configureStore(rootReducer, INITIAL_STATE );    
   }
  } 
