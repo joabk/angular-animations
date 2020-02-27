@@ -1,10 +1,16 @@
+<a routerLink="">Zippyx</a><br>
+<a routerLink="todos">Todos Animation</a><br>
+<a routerLink="todo-list">Todos Redux</a><br>
+
 <!-- <md-checkbox>Subscrive to news letters</md-checkbox> -->
 <p>counter {{ counter | async }} </p>
-<p>New messages {{ messaging.newMessages | async }} </p>
+<!-- <p>New messages {{ messaging.newMessages | async }} </p> -->
 <!-- <p>Newcount {{ messageCount | async }} </p> -->
 
-<button (click)="increament()">Increament</button>
+<button (click)="increament()"> Increament</button>
 <br><br>
+
+<router-outlet></router-outlet>
 
 <my-zippy title="BILLING DETAILS">
   Billing details
@@ -15,7 +21,6 @@
   Shipping details
 </my-zippy>
 
-<todos></todos>
 
 <!-- <zippy title="Shipping Address">
   <p>

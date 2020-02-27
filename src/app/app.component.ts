@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgRedux, select } from 'ng2-redux';
 import { IAppState, rootReducer } from './store';
 import { INCREAMENT } from './actions';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
