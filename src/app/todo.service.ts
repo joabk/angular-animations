@@ -9,7 +9,7 @@ import { Injectable, EventEmitter } from '@angular/core';
 // publish events as one component makes changes to the state. This is a perfectly valid solution 
 // and works well for small applications. But as your application grows in size and complexity, 
 // you need a more scalable solution, and that's where Redux shines. 
-// 
+//  
 // So here is one implementation of such service. This is not necessarily the best implementation.
 // Here, we are storing the list of todo items because it's something that both components are 
 // interested in. TodoDashboard also has an additional field (lastUpdate) which is not used 

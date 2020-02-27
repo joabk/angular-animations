@@ -8,7 +8,7 @@ import { TodoService } from '../todo.service';
 })
 export class TodoDashboardComponent {
   todos: number; 
-  lastUpdate; 
+  lastUpdate;  
   
   // Read the comment in TodoService
   constructor(private service: TodoService) { 

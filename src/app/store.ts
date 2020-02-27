@@ -14,6 +14,7 @@ export const INITIAL_STATE: IAppState = {
     newMessages: 5
   }
 }
+
 export function rootReducer(state: IAppState, action): IAppState{
   switch(action.type){
     case INCREAMENT:

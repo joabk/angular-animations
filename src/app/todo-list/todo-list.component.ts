@@ -7,7 +7,7 @@ import { TodoService } from '../todo.service';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent {
-  // Read the comment in TodoService
+  // Read the comment in TodoService 
   constructor(private service: TodoService) { 
   }
 
