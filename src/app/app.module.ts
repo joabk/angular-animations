@@ -15,7 +15,6 @@ import { TodoService } from './todo.service';
 //REDUX
 import { NgRedux, NgReduxModule } from 'ng2-redux';
 import { IAppState, rootReducer, INITIAL_STATE } from './store';
-import { ITodoState, todoReducer } from './todo-store'
 
 //ROUTER NgModule
 import { RouterModule } from '@angular/router';
@@ -50,7 +49,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(ngRedux: NgRedux<IAppState>, tngRedux: NgRedux<ITodoState>){
+  constructor(ngRedux: NgRedux<IAppState>){
     ngRedux.configureStore(rootReducer, INITIAL_STATE );    
     //tngRedux.configureStore(todoReducer, {})
   }
